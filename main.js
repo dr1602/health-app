@@ -14,7 +14,12 @@ const mainContainer = document.querySelector(".main-container");
 const productDetailContainer = document.querySelector('#productDetail');
 const productDetailCloseIcon = document.querySelector('.product-detail-close');
 
+const homeContainer = document.querySelector(".home-container");
+const resourcesContainer = document.querySelector(".resources-container");
+
 // constante para navegar en el menu
+const menusInicio = document.querySelector('.inicio');
+const menusResources = document.querySelector('.resources');
 const menusRopa = document.querySelector('.ropa');
 const menusJoyeria = document.querySelector('.joyeria');
 const menusPinturas = document.querySelector('.pinturas');
@@ -446,91 +451,91 @@ productListAdornos.push({
 //Otros
 const productListOtros = [];
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
 
 productListOtros.push({
-    name: 'Manualidad de Piedra',
+    name: 'Spa',
     price: 20,
     image: "https://p0.pxfuel.com/preview/333/794/551/herbs-soap-recreation-spa.jpg",
 });
@@ -855,76 +860,94 @@ renderProductsPinturas(productListPinturas);
 renderProductsAdornos(productListAdornos);
 renderProductsOtros(productListOtros);
 
-/*
-for (product of productListRopa) {
-    console.log(product.name);
+menusInicio.addEventListener('click',toggleHomeContainer);
+
+function toggleHomeContainer() {
+    console.log("click");
+
+    homeContainer.classList.remove('inactive');
+    resourcesContainer.classList.add('inactive');
 }
 
-for (product in productListRopa) {
-    console.log(product);
-}
-*/
+menusResources.addEventListener('click',toggleResourcesContainer);
 
-/*
-<div class="product-card">
-<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-<div class="product-info">
-  <div>
-    <p>$120,00</p>
-    <p>Bike</p>
-  </div>
-  <figure>
-    <img src="./icons/bt_add_to_cart.svg" alt="">
-  </figure>
-</div>
-</div>
-*/
+function toggleResourcesContainer() {
+    console.log("click");
 
-/*
-const validacion = false;
-
-switch (validacion) {
-    case menusRopa.classList.contains('off'):
-        
-        break;
-    case menusJoyeria.classList.contains('off'):
-        
-        break;
-    case menusPinturas.classList.contains('off'):
-        
-        break;
-    case menusAdornos.classList.contains('off'):
-        
-        break;
-    case menusOtros.classList.contains('off'):
-        
-        break;
-    break;
-}
-*/
-
-/*
-function menuProductos() {
-    if(menusRopa.classList.contains('off') == false) {
-        console.log (menusRopa.classList.contains('off') == false);
-        renderProducts(productListRopa);
-        return;
-    } else if(menusJoyeria.classList.contains('off') == false) {
-        console.log (menusJoyeria.classList.contains('off') == false);
-        renderProducts(productListJoyeria);
-        return;
-    } else if(menusPinturas.classList.contains('off') == false){
-        renderProducts(productListPinturas);
-        return;
-    } else if(menusAdornos.classList.contains('off') == false){
-        renderProducts(productListAdornos);
-        return;
-    } else if(menusOtros.classList.contains('off') == false){
-        renderProducts(productListOtros);
-        return;
-    };
-
+    homeContainer.classList.add('inactive');
+    resourcesContainer.classList.remove('inactive');
 }
 
-menuProductos();
-*/
+menusRopa.addEventListener('click',toggleMenuRopa);
+
+function toggleMenuRopa() {
+    console.log("click");
+
+    homeContainer.classList.add('inactive');
+    resourcesContainer.classList.add('inactive');
+    productCardRopa.classList.toggle('inactive');
+    productCardJoyeria.classList.add('inactive');
+    productCardPinturas.classList.add('inactive');
+    productCardAdornos.classList.add('inactive');
+    productCardOtros.classList.add('inactive');
+}
+
+menusJoyeria.addEventListener('click',toggleMenuJoyeria);
+    
+function toggleMenuJoyeria() {
+    console.log("click");
+
+    homeContainer.classList.add('inactive');
+    resourcesContainer.classList.add('inactive');
+    productCardJoyeria.classList.toggle('inactive');
+    productCardRopa.classList.add('inactive');
+    productCardJoyeria.classList.toggle('inactive');
+    productCardPinturas.classList.add('inactive');
+    productCardAdornos.classList.add('inactive');
+    productCardOtros.classList.add('inactive');  
+}
+   
+menusPinturas.addEventListener('click',toggleMenuPinturas);
+    
+function toggleMenuPinturas() {
+    console.log("click");
+
+    homeContainer.classList.add('inactive');
+    resourcesContainer.classList.add('inactive');
+    productCardPinturas.classList.toggle('inactive');  
+    productCardRopa.classList.add('inactive');
+    productCardJoyeria.classList.add('inactive');
+    productCardPinturas.classList.toggle('inactive');
+    productCardAdornos.classList.add('inactive');
+    productCardOtros.classList.add('inactive'); 
+}
+
+menusAdornos.addEventListener('click',toggleMenuAdornos);
+    
+function toggleMenuAdornos() {
+    console.log("click");
+
+    homeContainer.classList.add('inactive');
+    resourcesContainer.classList.add('inactive');
+    productCardAdornos.classList.toggle('inactive');
+    productCardRopa.classList.add('inactive');
+    productCardJoyeria.classList.add('inactive');
+    productCardPinturas.classList.add('inactive');
+    productCardAdornos.classList.toggle('inactive');
+    productCardOtros.classList.add('inactive');
+}
+
+menusOtros.addEventListener("click",toggleMenuOtros);
+    
+function toggleMenuOtros() {
+    console.log("click");
+
+    homeContainer.classList.add('inactive');
+    resourcesContainer.classList.add('inactive');
+    productCardOtros.classList.toggle('inactive');    
+    productCardRopa.classList.add('inactive');
+    productCardJoyeria.classList.add('inactive');
+    productCardPinturas.classList.add('inactive');
+    productCardAdornos.classList.add('inactive');
+    productCardOtros.classList.toggle('inactive');
+}
